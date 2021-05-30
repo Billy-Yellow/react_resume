@@ -55,7 +55,7 @@ class Header extends Component {
                 <div className="header-bottom">
                     <div className="header-bottom-left">{title}</div>
                     <div className="header-bottom-right">
-                        <span>{currentTime}</span>
+                        <span>Time: {currentTime}</span>
                     </div>
                 </div>
             </div>
