@@ -1,6 +1,7 @@
 {
   "name": "cv_resume",
   "version": "0.1.0",
+  "homepage": "https://Billy-Yellow.github.io/react_resume",
   "private": true,
   "dependencies": {
     "@craco/craco": "^6.1.2",
@@ -8,18 +9,22 @@
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
     "antd": "^4.16.0",
+    "build": "^0.1.4",
     "craco-less": "^1.17.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
+    "tree": "^0.1.3",
     "web-vitals": "^1.0.1"
   },
   "scripts": {
     "start": "craco start",
     "build": "craco build",
     "test": "craco test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -38,5 +43,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^3.2.0"
   }
 }
